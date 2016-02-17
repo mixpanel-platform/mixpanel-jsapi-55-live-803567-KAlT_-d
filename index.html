@@ -16,17 +16,14 @@
          event: "Conversion"
      }
      
-    var datadata =  function main(){
+    function main(){
        return Events({
          from_date: params.from_date,
          to_date: param.to_date
-        
        }).reduce(mixpanel.reducer.count())
-       
-       document.write("No Errors");
-       
-       
      }
+     var dataData = main();
+     console.log(dataData);
     </script>
   </body>
 </html>
